@@ -71,11 +71,15 @@ GIT
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
 
-GEM
-  remote: https://rubygems.org/
+PATH
+  remote: ../active_model_serializers
   specs:
     active_model_serializers (0.10.0.rc2)
       activemodel (>= 4.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
     builder (3.2.2)
     byebug (5.0.0)
       columnize (= 0.9.0)
@@ -86,6 +90,9 @@ GEM
       activesupport (>= 4.1.0)
     i18n (0.7.0)
     json (1.8.3)
+    kaminari (0.16.3)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     loofah (2.0.2)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -116,18 +123,21 @@ GEM
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    will_paginate (3.0.7)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_model_serializers (~> 0.10.0.rc2)
+  active_model_serializers!
   arel!
   byebug
+  kaminari
   rails!
   spring
   sprockets-rails!
   sqlite3
+  will_paginate
 
 BUNDLED WITH
    1.10.6
